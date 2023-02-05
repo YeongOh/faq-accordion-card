@@ -1,0 +1,121 @@
+/* ### Primary
+
+#### Text
+
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+#### Gradient
+
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+### Neutral
+
+#### Text
+
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 12px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+:root {
+  --color-bg-soft-violet: hsl(273, 75%, 66%);
+  --color-bg-soft-blue: hsl(240, 73%, 65%);
+  --color-text-dark-gray-blue: hsl(237, 12%, 33%);
+  --color-text-gray-blue: hsl(240, 6%, 50%);
+  --color-divider-light-blue: hsl(240, 5%, 91%);
+}
+
+body {
+  font-size: 0.75rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-soft-violet);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: transparent;
+  background-color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  border-radius: 1.5rem;
+  width: 58rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__box {
+  position: absolute;
+  top: 13.5rem;
+  left: -6rem;
+  z-index: 3;
+}
+
+.card__image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card__image__bg {
+  position: absolute;
+  left: -10rem;
+  width: 35rem;
+  z-index: 0;
+}
+
+.card__image__woman {
+  position: absolute;
+  left: -5rem;
+  top: 15%;
+  z-index: 0;
+}
+
+.card__content {
+  padding: 5rem;
+  width: 60%;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card__item {
+  border-bottom: 1px var(--color-divider-light-blue) solid;
+  padding-bottom: 1rem;
+}

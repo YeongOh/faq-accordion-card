@@ -1,10 +1,10 @@
 const cardItem = document.querySelector('.card__list');
 
 cardItem.addEventListener('click', (e) => {
-  if (e.target.classList.contains('card__item__question')) {
-    const question = e.target;
-    const button = e.target.children[0];
-    const answer = e.target.nextElementSibling;
+  if (e.target.closest('.card__item__question')) {
+    const question = e.target.closest('.card__item__question');
+    const button = question.children[0];
+    const answer = question.nextElementSibling;
 
     question.classList.toggle('active');
     button.classList.toggle('active');

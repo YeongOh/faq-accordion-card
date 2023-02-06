@@ -94,13 +94,13 @@ ul {
 .card__box {
   position: absolute;
   top: 13.5rem;
-  left: -6rem;
+  left: -6.3rem;
   z-index: 3;
   transition: left 0.25s ease-in-out;
 }
 
 .card__box.move {
-  left: -8rem;
+  left: -8.5rem;
   transition: left 0.25s ease-in-out;
 }
 

@@ -23,13 +23,17 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- See hover states for interactive elements
+- View the optimal layout for the component depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Hide/Show the answer to a question when the question is clicked
 
 ### Screenshot
 
 ![](./screenshot.JPG)
 
 ## My process
+
+I mainly used flexbox and relative absolute positions to manipulate image locations.
 
 ### Built with
 
@@ -39,23 +43,15 @@ Users should be able to:
 
 ### What I learned
 
-```html
+I got to do more hands-on practice on DOM manipulation.
 
-```
-
-```css
-
-```
-
-```js
-
-```
+I tried to utilize picture element for mobile and desktop version of imgs.
 
 ### Continued development
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Color Gradient](https://mycolor.space/gradien) - used for background color
 
 ## Author
 
